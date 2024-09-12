@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "PT Serif", serif;
+}
+
+ul a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+ul span {
+  color: white !important;
+}
+
+ul span:hover {
+  color: white !important;
+}
+
+ul a:hover {
+  color: #252525 !important;
+  background-color: orange !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+ul li:active {
+  color: #252525 !important;
+  background-color: orange !important;
+}
+
+/* Normal state - text color black */
+.customer {
+  color: black !important;
+  transition: background-color 0.3s ease, color 0.3s ease !important;
+}
+
+/* Hover state - text color orange */
+.customer:hover {
+  color: orange !important;
+}
+
+/* Active state - background color orange and text color black */
+.customer.active {
+  background-color: orange !important;
+  color: black !important;
+}
+
+/* ul li button:active {
+  color: #252525 !important;
+  background-color: orange !important;
+} */
+
+.btn-close {
+  margin-right: 10px !important;
+}
+
+.icon {
+  color: white !important;
+}
+
+ul li {
+  margin: 5px 5px 5px 5px;
+  font-size: large !important;
+  text-align: center !important;
+}
+
+.sidebar-main {
+  height: 85vh !important;
+}
+
+.container {
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+button a {
+  text-decoration: none !important;
+  color: white !important;
+}
