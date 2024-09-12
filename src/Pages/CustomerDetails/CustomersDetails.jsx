@@ -100,7 +100,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchDailyData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/newcustomer/daily")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/newcustomer/daily"
+        )
         .then((res) => {
           const datas = res.data.data;
 
@@ -133,7 +135,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchDailyDubData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/dublicate/daily")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/dublicate/daily"
+        )
         .then((res) => {
           const datas = res.data.data;
 
@@ -167,7 +171,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchMonthlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/newcustomer/monthly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/newcustomer/monthly"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(
@@ -203,7 +209,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchMonthlyDubData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/dublicate/monthly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/dublicate/monthly"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(
@@ -261,7 +269,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchYearlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/newcustomer/yearly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/newcustomer/yearly"
+        )
         .then((res) => {
           const datas = res.data.data;
 
@@ -291,7 +301,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchYearlyDubData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/dublicate/yearly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/dublicate/yearly"
+        )
         .then((res) => {
           const datas = res.data.data;
 
@@ -322,7 +334,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchQuaterlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/newcustomer/quarterly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/newcustomer/quarterly"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(
@@ -356,7 +370,9 @@ const CustomersDetails = () => {
   useEffect(() => {
     const fetchQuaterlyDubData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/dublicate/quarterly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/customer/dublicate/quarterly"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(

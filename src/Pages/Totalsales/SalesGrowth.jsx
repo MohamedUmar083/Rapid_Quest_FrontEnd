@@ -63,7 +63,9 @@ const SalesGrowth = () => {
   useEffect(() => {
     const fetchSalesGrowthDaily = async () => {
       await axios
-        .get("http://localhost:8383/api/order/growthrate/daily")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/growthrate/daily"
+        )
         .then((res) => {
           const data = res.data.data;
           const filteredData = data.filter(
@@ -100,7 +102,9 @@ const SalesGrowth = () => {
   useEffect(() => {
     const fetchSalesGrowthMonthly = async () => {
       await axios
-        .get("http://localhost:8383/api/order/growthrate/monthly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/growthrate/monthly"
+        )
         .then((res) => {
           const data = res.data.data;
           const filteredData = data.filter(
@@ -139,7 +143,9 @@ const SalesGrowth = () => {
   useEffect(() => {
     const fetchYearlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/growthrate/yearly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/growthrate/yearly"
+        )
         .then((res) => {
           const data = res.data.data;
           const fyear = data.filter((d) => d.period.year === parseInt("2023"));
@@ -169,7 +175,9 @@ const SalesGrowth = () => {
   useEffect(() => {
     const fetchQuaterlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/growthrate/quarterly")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/growthrate/quarterly"
+        )
         .then((res) => {
           const data = res.data.data;
           const filteredData = data.filter(

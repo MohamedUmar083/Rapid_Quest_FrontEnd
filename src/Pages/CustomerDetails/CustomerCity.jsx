@@ -7,7 +7,7 @@ const CustomerCity = () => {
   useEffect(() => {
     const fetchCityData = async () => {
       await axios
-        .get("http://localhost:8383/api/customer/getCity")
+        .get("https://rapid-quest-backend.onrender.com/api/customer/getCity")
         .then((response) => {
           const data = response.data.data;
           const labels = data.map((element) => element._id);

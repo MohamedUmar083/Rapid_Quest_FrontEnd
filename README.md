@@ -42,3 +42,9 @@ This is the frontend for the Sales Analytics Dashboard, built using React and Ch
 
 - **Component**: `Cohort.jsx`
 - **Description**: Displays customer lifetime value grouped by cohort based on their first purchase.
+
+## Documentation
+
+### 1. For Backend Source Code
+
+- [Backend Repository](https://github.com/MohamedUmar083/Rapid_Quest_Backend) - The Backend repository for the project.

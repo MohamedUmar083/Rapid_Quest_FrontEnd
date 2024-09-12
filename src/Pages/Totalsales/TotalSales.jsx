@@ -64,7 +64,9 @@ const TotalSales = () => {
   useEffect(() => {
     const fetchMonthlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/totalsales/monthlysales")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/totalsales/monthlysales"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(
@@ -100,7 +102,9 @@ const TotalSales = () => {
   useEffect(() => {
     const fetchDailyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/totalsales/dailysales")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/totalsales/dailysales"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(
@@ -132,7 +136,9 @@ const TotalSales = () => {
   useEffect(() => {
     const fetchYearlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/totalsales/yearlysales")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/totalsales/yearlysales"
+        )
         .then((res) => {
           const datas = res.data.data;
 
@@ -162,7 +168,9 @@ const TotalSales = () => {
   useEffect(() => {
     const fetchQuaterlyData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/totalsales/quarterlysales")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/totalsales/quarterlysales"
+        )
         .then((res) => {
           const datas = res.data.data;
           const filteredData = datas.filter(

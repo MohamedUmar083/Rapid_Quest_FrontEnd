@@ -14,7 +14,9 @@ const Cohorts = () => {
     // Fetch CLV data from the backend
     const fetchCLVData = async () => {
       await axios
-        .get("http://localhost:8383/api/order/totalsales/getclv")
+        .get(
+          "https://rapid-quest-backend.onrender.com/api/order/totalsales/getclv"
+        )
         .then((response) => {
           const data = response.data.data;
           //console.log(response.data.data);
